@@ -17,7 +17,7 @@ models:
         description: Date the order was placed.
       - name: order_status
         description: Lifecycle status of the order.
-      - name: order_total
+      - name: order_amount_usd
         description: Order value in the order currency, tax included.
       - name: currency
         description: ISO-4217 currency code.
