@@ -23,4 +23,3 @@ models:
         description: ISO-4217 currency code.
       - name: is_fulfilled
         description: True when the order has shipped or completed.
-
