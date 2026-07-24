@@ -27,5 +27,6 @@ jobs:
           narrative-model: ${{ vars.GUARDIAN_NARRATIVE_MODEL }}
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           openai-base-url: ${{ vars.OPENAI_BASE_URL }}
+          slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           warehouse-project: ${{ vars.GCP_PROJECT }}
           warehouse-dataset: ${{ vars.BQ_DATASET }}
