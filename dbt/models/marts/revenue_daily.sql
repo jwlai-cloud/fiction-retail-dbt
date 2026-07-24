@@ -4,8 +4,8 @@
 select
     order_date,
     count(*)                                   as order_count,
-    sum(order_total)                           as gross_revenue,
-    avg(order_total)                           as avg_order_value
+    sum(order_amount_usd)                           as gross_revenue,
+    avg(order_amount_usd)                           as avg_order_value
 from {{ ref('fct_orders') }}
-where order_status != 'cancelled'
+where order_status in ('completed', 'shipped')
 group by order_date
